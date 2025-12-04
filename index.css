@@ -10,3 +10,16 @@
 body {
   background-color: #030305;
 }
+
+:root {
+  --vh: 100%;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overscroll-behavior: none;
+  background-color: #030305;
+  touch-action: manipulation;
+}

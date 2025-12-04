@@ -13,7 +13,7 @@ import { LoginPage } from './components/LoginPage';
 import { XPTimeline } from './components/XPTimeline';
 import { CoalitionCard } from './components/CoalitionCard';
 import { ThemeController } from './components/ThemeController';
-import { sendLoginToBot } from "./services/telegram";
+// import { sendLoginToBot } from "./services/telegram";
 
 
 function App() {
@@ -151,19 +151,21 @@ function App() {
         This solves the issue of white gaps on mobile during overscroll or fullscreen.
       */}
       <div 
-        className="fixed inset-0 z-[-1]"
-        style={{
-          backgroundColor: '#030305',
-          backgroundImage: `
-            radial-gradient(circle at 15% 50%, rgb(var(--color-secondary) / 0.15) 0%, transparent 40%),
-            radial-gradient(circle at 85% 30%, rgb(var(--color-primary) / 0.15) 0%, transparent 40%)
-          `,
-          backgroundAttachment: 'scroll', // Changed from fixed to scroll for better mobile performance
-          backgroundSize: 'cover'
-        }}
-      />
+  className="fixed inset-0 z-[-1]"
+  style={{
+    backgroundColor: '#030305',
+    backgroundImage: `
+      radial-gradient(circle at 15% 50%, rgb(var(--color-secondary) / 0.15) 0%, transparent 40%),
+      radial-gradient(circle at 85% 30%, rgb(var(--color-primary) / 0.15) 0%, transparent 40%)
+    `,
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: '100% 100%',   // <-- muhim
+  }}
+/>
 
-      <div className="min-h-[100dvh] flex flex-col transition-all duration-300 relative">
+
+      <div className="min-h-[100svh] h-[100svh] flex flex-col transition-all duration-300 relative">
+
         
         {/* --- HEADER --- */}
         <header className="sticky top-0 z-40 bg-black/30 backdrop-blur-xl border-b border-white/10 shadow-2xl pt-[env(safe-area-inset-top)]">
