@@ -226,7 +226,7 @@ function App() {
         </header>
 
         {/* --- MAIN CONTENT --- */}
-        <main className="flex-grow max-w-[1600px] w-full mx-auto px-4 py-8 pb-[calc(2rem+env(safe-area-inset-bottom))]">
+        <main className="flex-grow max-w-[1600px] w-full mx-auto px-4 py-8 pb-8">
           
           {/* Loading State */}
           {state.isLoading && (
