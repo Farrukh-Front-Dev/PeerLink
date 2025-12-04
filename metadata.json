@@ -1,0 +1,5 @@
+{
+  "name": "PeerLink",
+  "description": "A Liquid Glass style profile viewer for School21 participants with real-time data fetching, offline caching, and multilingual support.",
+  "requestFramePermissions": []
+}
