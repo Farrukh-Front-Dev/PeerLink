@@ -164,8 +164,7 @@ function App() {
 />
 
 
-      <div className="min-h-[100svh] h-[100svh] flex flex-col transition-all duration-300 relative">
-
+      <div className="h-[100svh] flex flex-col overflow-hidden">
         
         {/* --- HEADER --- */}
         <header className="sticky top-0 z-40 bg-black/30 backdrop-blur-xl border-b border-white/10 shadow-2xl pt-[env(safe-area-inset-top)]">
@@ -226,7 +225,7 @@ function App() {
         </header>
 
         {/* --- MAIN CONTENT --- */}
-        <main className="flex-grow max-w-[1600px] w-full mx-auto px-4 py-8 pb-8">
+          <main className="flex-1 overflow-y-auto px-4 py-8 max-w-[1600px] mx-auto w-full">
           
           {/* Loading State */}
           {state.isLoading && (
