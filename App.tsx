@@ -159,12 +159,14 @@ function App() {
       radial-gradient(circle at 85% 30%, rgb(var(--color-primary) / 0.15) 0%, transparent 40%)
     `,
     backgroundRepeat: 'no-repeat',
-    backgroundSize: '100% 100%',   // <-- muhim
+    backgroundSize: '100% 100%',
+    minHeight: '100dvh',
   }}
 />
 
 
-      <div className="h-[100svh] flex flex-col overflow-hidden">
+      <div className="min-h-[100svh] h-[100svh] flex flex-col transition-all duration-300 relative">
+
         
         {/* --- HEADER --- */}
         <header className="sticky top-0 z-40 bg-black/30 backdrop-blur-xl border-b border-white/10 shadow-2xl pt-[env(safe-area-inset-top)]">
@@ -225,7 +227,7 @@ function App() {
         </header>
 
         {/* --- MAIN CONTENT --- */}
-          <main className="flex-1 overflow-y-auto px-4 py-8 max-w-[1600px] mx-auto w-full">
+        <main className="flex-grow max-w-[1600px] w-full mx-auto px-4 py-8 pb-8">
           
           {/* Loading State */}
           {state.isLoading && (
