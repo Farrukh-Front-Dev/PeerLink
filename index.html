@@ -1,44 +1,20 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
     <meta name="theme-color" content="#000000" />
-    <title>PeerLink | School21 Profile Viewer</title>
-    <!-- favicon -->
+   <title>PeerLink</title>
 
-    <link rel="icon" type="image/png" href="/PeerLinkLogo.png" />
-
-    <!-- 32x32 -->
-    <link rel="icon" type="image/png" sizes="32x32" href="/PeerLinkLogo.png" />
-
-    <!-- 16x16 -->
-    <link rel="icon" type="image/png" sizes="16x16" href="/PeerLinkLogo.png" />
-
-    <!-- Apple Touch Icon (iPhone, iPad) -->
-    <link rel="apple-touch-icon" href="/PeerLinkLogo.png" />
-
-    <!-- Android Chrome -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="/PeerLinkLogo.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="512x512"
-      href="/PeerLinkLogo.png"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-
+  <!-- Open Graph -->
+  <meta property="og:title" content="PeerLink | School21 Profile Viewer" />
+  <meta property="og:description" content="School21 profilini tez va qulay ko‘rish uchun yaratilgan vosita." />
+  <meta property="og:image" content="https://peerlink-school21.vercel.app/PeerLinkLogo.png" />
+  <meta property="og:url" content="https://peerlink-school21.vercel.app" />
+  <meta property="og:type" content="website" />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -46,56 +22,56 @@
         theme: {
           extend: {
             fontFamily: {
-              sans: ["Outfit", "sans-serif"],
+              sans: ['Outfit', 'sans-serif'],
             },
             colors: {
               neon: {
-                cyan: "rgb(var(--color-primary) / <alpha-value>)",
-                purple: "rgb(var(--color-secondary) / <alpha-value>)",
-                magenta: "rgb(var(--color-secondary) / <alpha-value>)",
+                cyan: 'rgb(var(--color-primary) / <alpha-value>)',
+                purple: 'rgb(var(--color-secondary) / <alpha-value>)',
+                magenta: 'rgb(var(--color-secondary) / <alpha-value>)',
               },
             },
             animation: {
-              "spin-slow": "spin 3s linear infinite",
-              "pulse-slow": "pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
-              slideUp: "slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards",
-              fadeIn: "fadeIn 0.6s ease-out forwards",
-              zoomIn: "zoomIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards",
-              shimmer: "shimmer 2s infinite",
-              float: "float 3s ease-in-out infinite",
+              'spin-slow': 'spin 3s linear infinite',
+              'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'slideUp': 'slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+              'fadeIn': 'fadeIn 0.6s ease-out forwards',
+              'zoomIn': 'zoomIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+              'shimmer': 'shimmer 2s infinite',
+              'float': 'float 3s ease-in-out infinite',
             },
             keyframes: {
               slideUp: {
-                "0%": { transform: "translateY(40px)", opacity: "0" },
-                "100%": { transform: "translateY(0)", opacity: "1" },
+                '0%': { transform: 'translateY(40px)', opacity: '0' },
+                '100%': { transform: 'translateY(0)', opacity: '1' },
               },
               fadeIn: {
-                "0%": { opacity: "0" },
-                "100%": { opacity: "1" },
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
               },
               zoomIn: {
-                "0%": { transform: "scale(0.8)", opacity: "0" },
-                "100%": { transform: "scale(1)", opacity: "1" },
+                '0%': { transform: 'scale(0.8)', opacity: '0' },
+                '100%': { transform: 'scale(1)', opacity: '1' },
               },
               shimmer: {
-                "0%": { transform: "translateX(-100%)" },
-                "100%": { transform: "translateX(100%)" },
+                '0%': { transform: 'translateX(-100%)' },
+                '100%': { transform: 'translateX(100%)' },
               },
               float: {
-                "0%": { transform: "translateY(0px)" },
-                "50%": { transform: "translateY(-10px)" },
-                "100%": { transform: "translateY(0px)" },
-              },
-            },
-          },
-        },
-      };
+                '0%': { transform: 'translateY(0px)' },
+                '50%': { transform: 'translateY(-10px)' },
+                '100%': { transform: 'translateY(0px)' },
+              }
+            }
+          }
+        }
+      }
     </script>
 
     <style>
       :root {
         /* Default Theme: Cyber (Cyan/Purple) */
-        --color-primary: 0 243 255; /* #00f3ff */
+        --color-primary: 0 243 255;    /* #00f3ff */
         --color-secondary: 188 19 254; /* #bc13fe */
       }
 
@@ -127,16 +103,16 @@
         width: 8px;
         height: 8px;
       }
-
+      
       ::-webkit-scrollbar-track {
         background: transparent;
       }
-
+      
       ::-webkit-scrollbar-thumb {
         background: #333;
         border-radius: 99px;
       }
-
+      
       ::-webkit-scrollbar-thumb:hover {
         background: rgb(var(--color-primary));
       }
@@ -149,21 +125,21 @@
         scrollbar-width: none;
       }
     </style>
-    <script type="importmap">
-      {
-        "imports": {
-          "react": "https://aistudiocdn.com/react@^19.2.1",
-          "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
-          "react/": "https://aistudiocdn.com/react@^19.2.1/",
-          "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
-          "recharts": "https://aistudiocdn.com/recharts@^3.5.1",
-          "vite": "https://aistudiocdn.com/vite@^7.2.6",
-          "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1"
-        }
-      }
-    </script>
-    <link rel="stylesheet" href="/index.css" />
-  </head>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.1",
+    "vite": "https://aistudiocdn.com/vite@^7.2.6",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
   <body>
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
