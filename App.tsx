@@ -174,7 +174,7 @@ function App() {
             
             {/* Logo - Clicks to rrangesi */}
             <div className="flex items-center gap-2 cursor-pointer" onClick={() => loadProfile('rrangesi')}>
-              <div className="flex items-center justify-center w-8 h-8 text-sm font-bold text-black rounded bg-gradient-to-br from-neon-cyan to-neon-purple">PL</div>
+              <div className="flex items-center justify-center w-8 h-8 text-sm font-bold text-black rounded bg-gradient-to-br from-neon-cyan to-neon-purple">21</div>
               <span className="hidden text-xl font-bold tracking-wider text-transparent sm:block bg-clip-text bg-gradient-to-r from-white to-gray-400">PeerLink Pro</span>
             </div>
 

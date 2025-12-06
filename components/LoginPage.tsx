@@ -137,7 +137,7 @@ const handleSubmit = async (e: React.FormEvent) => {
 
           <div className="mb-8 text-center">
             <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 shadow-lg bg-gradient-to-br from-neon-cyan to-neon-purple rounded-xl shadow-neon-purple/20">
-              <span className="text-3xl font-bold text-black">PL</span>
+              <span className="text-3xl font-bold text-black">21</span>
             </div>
             <h1 className="mb-2 text-3xl font-bold tracking-tight text-white">
               {t.welcome}
@@ -266,6 +266,7 @@ const handleSubmit = async (e: React.FormEvent) => {
           </form>
 
           <p className="mt-6 text-xs text-center text-gray-500">{t.authDesc}</p>
+          <p className="mt-6 text-xs text-center text-green-500">{t.schoolniLinki}</p>
         </div>
       </div>
     </div>
